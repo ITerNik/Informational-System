@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<html lang="ru"
+      xmlns:h="jakarta.faces.html">
 <h:head>
     <title>Страница авторизации</title>
 </h:head>
@@ -9,11 +9,11 @@
     <h:form>
         <h:panelGrid columns="2" border="0">
             <h:outputText value="Логин"/>
-            <h:inputText value="#{hello.login}" />
+            <h:inputText value="#{helloBean.login}" />
             <h:outputText value="Пароль"/>
-            <h:inputSecret value="#{hello.password}" />
+            <h:inputSecret value="#{helloBean.password}" />
         </h:panelGrid>
-        <h:commandButton value="Вход" action="#{hello.checkLogin}" />
+        <h:commandButton value="Вход" action="#{helloBean.checkLogin}" />
     </h:form>
 </h:body>
 </html>
