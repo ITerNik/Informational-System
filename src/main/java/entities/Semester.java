@@ -5,5 +5,5 @@ public enum Semester {
     SECOND,
     THIRD,
     SEVENTH,
-    EIGHTH;
+    EIGHTH
 }

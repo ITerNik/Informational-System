@@ -10,7 +10,7 @@ import lombok.Data;
 @Table(name = "coordinates")
 public class Coordinates {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Min(-123)
     @NotNull
