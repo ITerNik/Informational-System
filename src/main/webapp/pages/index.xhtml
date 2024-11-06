@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru"
-      xmlns:h="jakarta.faces.html">
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core">
 <h:head>
     <title>Страница авторизации</title>
+    <h:outputScript library="dist" name="main.bundle.js"/>
 </h:head>
 
 <h:body>
     <h:form>
         <h:panelGrid columns="2" border="0">
             <h:outputText value="Логин"/>
-            <h:inputText value="#{helloBean.login}" />
+            <h:inputText value="#{helloBean.login}">
+                <f:ajax event="keyup" render="name_test"/>
+            </h:inputText>
             <h:outputText value="Пароль"/>
             <h:inputSecret value="#{helloBean.password}" />
         </h:panelGrid>
         <h:commandButton value="Вход" action="#{helloBean.checkLogin}" />
     </h:form>
+    <h:outputText id="name_test" value="#{helloBean.login}!" />
 </h:body>
 </html>

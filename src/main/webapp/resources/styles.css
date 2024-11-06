@@ -1,0 +1,10 @@
+:root {
+    --main-color: #3498db;
+}
+
+body {
+    color: var(--main-color);
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+}

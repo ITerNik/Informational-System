@@ -3,6 +3,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 hibernate.properties
+node_modules/
+src/main/webapp/resources/dist
+
 
 ### IntelliJ IDEA ###
 *.iws
